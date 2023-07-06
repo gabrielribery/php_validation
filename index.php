@@ -15,7 +15,8 @@
 
 <!-- HEADER -->
 <?php 
-    include "./includes/header.php"; 
+    include "./includes/header.php";
+    include "./includes/tools.php"; 
 ?>
 <!-- END:HEADER -->
 
