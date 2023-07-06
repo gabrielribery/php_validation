@@ -15,7 +15,6 @@
 
 <!-- HEADER -->
 <?php 
-    include "./includes/tools.php";
     include "./includes/header.php"; 
 ?>
 <!-- END:HEADER -->
@@ -28,11 +27,11 @@
           P01: Setze die Variable 'title' zu "Bitte fülle die Felder oder wähle aus."
           Gib den Wert von 'title' in die Seite aus (fett hervorgehoben).
         */
-        
+        $title= "Bitte fülle die Felder oder wähle aus.";
+        echo "<strong>$title</strong>";
     ?>
 </p>
 
-<!-- FORMULAR -->
 <form action="result.php" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"><br>
@@ -75,11 +74,19 @@
           mit Double-Quotes. Preis: Ich muss innerhalb der "" mit 
           Single-Quotes arbeiten.
         */
-        
+      $mammals = array("Rind", "Pferd", "Ziege", "Mensch");
+      $i = 0;
+
+      while ($i < count($mammals)) {   //wenn mehr optionen da sind funktion besser vorlagern da sonst viele counts erstellt werden
+        $m = $mammals[$i];
+        echo "<option value=\"$m\">$m</option>";
+        $i++;
+      }
       ?>
     </select>
 
     <br><br>
+
 
     <label for="name">Kommentar - bitte ohne Schimpfwörter, maximal 20 Buchstaben:</label>
     <input type="text" id="comment" name="comment"><br>
