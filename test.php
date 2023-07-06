@@ -21,3 +21,49 @@
 </p>
 </body>
 </html>
+
+
+<?php
+// formular abgesendet
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $redSelected = false;
+    $whiteSelected = false;
+    $otherSelected = false;
+    $hasSelection = false;
+
+    // check farb
+    foreach ($_POST as $key => $value) {
+        if (str_contains($key, "color-")) {
+            $hasSelection = true;
+
+            if ($value == "rot") {
+                $redSelected = true;
+            } elseif ($value == "weiss") {
+                $whiteSelected = true;
+            } else {
+                $otherSelected = true;
+            }
+        }
+    }
+
+    //gibt liste aus
+    if ($hasSelection) {
+        echo "Ausgewählte Farben: ";
+        $selectedColors = [];
+
+        if ($redSelected) {
+            $selectedColors[] = "Rot";
+        }
+        if ($whiteSelected) {
+            $selectedColors[] = "Weiss";
+        }
+        if ($otherSelected) {
+            $selectedColors[] = "Andere";
+        }
+
+        echo implode(", ", $selectedColors);
+    } else {
+        echo "Keine Farben ausgewählt.";
+    }
+}
+?>
