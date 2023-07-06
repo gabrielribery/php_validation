@@ -33,7 +33,7 @@
 
       Willkommen <?php echo $_POST["name"]; ?>!<br>
       Deine Email-Adresse lautet <?php echo $_POST["email"]; ?>.<br>
-      Geht es dir heute gut: <?php echo $_POST["radio-mood"]; ?>.<br>
+      Geht es dir heute gut: <?php echo $_POST["radio-01"]; ?>.<br>
 
       Du hast folgende Farben gewählt: 
       <?php

@@ -1,13 +1,15 @@
 <?php
-
-$questionTxt = "Geht es dir heute scheisse?";
+$qid = "01";  //frage id 
+$questionTxt = "Bist du dumm?";
 $answers = array("ja", "nein");
+$correctAnswerIndex = 0;
+// $points = 1;
 
 echo "<p>&nbsp;</p>
     <p>$questionTxt</p>
-    <input type='radio' id='ja' name='radio-01' value='$answers[0]'>
-    <label for='ja'>$answers[0]</label><br>
-    <input type='radio' id='nein' name='radio-01' value='$answers[1]'>
-    <label for='nein'>$answers[1]</label><br><br>";
+    <input type='radio' id='r-$qid-0' name='radio-$qid' value='$answers[0]'>
+    <label for='r-$qid-0'>$answers[0]</label><br>
+    <input type='radio' id='r-$qid-1' name='radio-$qid' value='$answers[1]'>
+    <label for='r-$qid-1'>$answers[1]</label><br><br>";
 
 ?>
