@@ -7,9 +7,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <header style="background-color: blue; color: white;">
-    <h1>header</h1>
-  </header>
+<header class="bg-primary text-white text-center text-lg-start">
+    <div class="container p-4">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <?php 
+                /*
+                    Setze die variable 'people' and gib den
+                    Wert davon mit Hilfe von echo aus (String
+                    Template mit dem Ersten Wort 'Hello').
+                */ 
+
+
+                // Aufforderung
+
+            ?>
+        </div>
+    </div>
+</header>
 
   <div class="container mt-4">
     <div class="row">
@@ -28,9 +42,13 @@
     </div>
   </div>
 
-  <footer style="background-color: blue; color: white;" class="mt-4">
-    <h3>footer</h3>
-  </footer>
+  <footer class="bg-primary text-white text-center text-lg-start">
+    <div class="container p-4">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 by Chris
+        </div>
+    </div>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
