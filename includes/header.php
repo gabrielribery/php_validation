@@ -9,10 +9,11 @@
                 */ 
 
                 $people = "Coders";
-                echo "Hello $people !";
+                echo "Hello $people";
 
 
                 // Aufforderung
+                echo " - Have a nice day!"
 
             ?>
         </div>
