@@ -9,6 +9,7 @@ function ynquestion() {
     <label for='r-$qid-1'>$answers[1]</label><br><br>";
 
 }
+
 $qid = "01";  //frage id 
 $questionTxt = "Bist du dumm?";
 $answers = array("ja", "nein");
